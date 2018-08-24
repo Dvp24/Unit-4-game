@@ -33,8 +33,7 @@ $(document).ready(function () {
       console.log("you win");
       $(".instructions").html("You Won!!!");
       $(".first").css({'display':'none'});
-      $(".second").css({'display':'none'});
-      $(".wi").css({'display':'inline'});
+      $(".none").css({'display':'inherit'});
       // $(".winning_screen").css({'background-imge':'url("https://giphy.com/stickers/cute-kawaii-1gP0UvJKH9Hqc4EJAa")'});
     }
     else if (ytotal > randomNumber) {
