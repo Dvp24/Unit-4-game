@@ -41,6 +41,18 @@
       <div class="heading mt-0">Crystal Collector</div>
       <!-- ??? -->
       <div class="row">
+        <div class="col-1"></div>
+        <div class="col-5 bg-warning opa rounded mr-1">
+          <h5>wins</h5>
+          <h5>0</h5>
+        </div>
+        <div class="col-5 bg-warning opa rounded ml-1">
+          <h5>losses</h5>
+          <h5>0</h5>
+          <div class="col-1"></div>
+        </div>
+      </div>
+      <div class="row mt-2">
         <div class="bg-light instructions">
           <p>1. you'll be given a random number at the start of the game.</p>
           <p>2. There are four crystals below. By clicking on the crystal you'll be adding a specific amount of points to your
@@ -48,11 +60,10 @@
           <p>3. You win the game by matching your score to the random number, you lose the game if your total score goes above
             the random number.</p>
           <p>4. The value of each crystal is hidden from you until you click on it.</p>
-          <p>5. Each time when the game starts, the game will change the values of each crystal.</p>
         </div>
       </div>
 
-      <div class="row my-5">
+      <div class="row my-4">
         <div class="col-2 my-4 ">
           <img class="pink" src="assets/images/pink_gem.png">
         </div>
@@ -68,13 +79,13 @@
         <div class="col-1"></div>
         <div class="col-3">
           <div class="row">
-            <div class="col-12 bg-warning opa rounded py-1">
+            <div class="col-12 bg-warning opa rounded m-0 py-1">
               <h6>Your Score</h6>
             </div>
             <div class="col-12 bg-warning opa rounded py-1">
               <h6 id="total">0</h6>
             </div>
-            <div class="col-12 bg-warning opa rounded mt-3 py-1">
+            <div class="col-12 bg-warning opa rounded mt-2 py-1">
               <h6>Random Number</h6>
             </div>
             <div class="col-12 bg-warning opa rounded py-1">
@@ -85,8 +96,6 @@
       </div>
     </div>
   </div>
-  <div class="wi">
-  </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -96,7 +105,6 @@
         $(document).keydown(function () {
           $('.first').css({ 'display': 'none' });
           $('.second').css({ 'display': 'inline' });
-          $('.wi').css({'display':'none'})
       
         })
       })
