@@ -80,13 +80,14 @@ h6{
   font-size: 100px;
   color: green
 }
-.instructions{
+#win, #loose, .instructions{
   opacity: 0.3;
   width: 100%;
   margin-top: 0px;
   font-size: 15px;
   color: deeppink;
   padding-bottom: 0px;
+  height: 154px;
 }
 img{
  height: 100px;
@@ -113,7 +114,12 @@ h5, h6{
   background-image: url("../images/giphy_stars.gif");
   display: none;
   position: absolute;
-  
+  z-index: 1;
   height: 100%;
   width: 90%;
+  pointer-events: none;
+}
+.newNum{
+  position: absolute;
+  z-index: 10;
 }
